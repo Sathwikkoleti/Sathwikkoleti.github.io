@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+:root{
+    --primary-color:#5B99C2;
+    --dark-grey:#475569;
+    --light-grey:;
+    --white:#f8fafc;
+    --black:#000000;
+    --baige:#F9DBBA;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--baige);
+    font-style: bold;
+    margin: 0;
+    background-image: linear-gradient(to bottom right,var(--primary-color),var(--white));
+}
+.placeholder{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--baige);
+    font-style: bold;
+    margin: 0;
+}
+.container{
+    display:flex;
+    width:auto;
+    height: 75vh;
+    padding: 2rem 1rem;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.navigation{
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    max-height: 100px;
+    background-image: linear-gradient(to bottom right,#1A4870,#1F316F);;
+    border-radius:0rem 0rem 0rem 1rem;
+    padding:1rem;
+    text-align: left;
+    border-radius: 0 0  0 25px  ;
+    padding: 1rem;
+    
+}
+.navigation .nav-name{
+    font-size: 1.5rem;
+    text-align: left;
+}
+.box{
+    width: 250px;
+    height: 200px;
+    border:1.5px solid #000000;
+    justify-content: center;
+    margin-right: 10px;
+}
+.list-inline{
+    display:inline;
+    padding:0rem 1rem;
+}
+.navigation .link{
+    color:var(--black);
+    font-style: bold;
+    text-decoration: none;
+
+}
+.navigation .list-bullet{
+    text-align: right;
+}
+.link:before{
+    transform:scaleX(0);
+    transition: transform 0.2s linear;
+}
+.link:hover{
+    color: var(--baige);
+    transform:scaleX(1);
+}
+.footer{
+    width:100%;height: 100px;
+    background-image: linear-gradient(to bottom right,#1A4870,#1F316F);;
+    text-align:  center; 
+    border-radius: 0 25px 0 0; 
+}
+.footer .col{
+    margin-top: 30px;
+}
+
+</style>
+<body>
+    <nav class="navigation">
+        <div class="nav-name"><strong>My Application</strong> </div>
+        <ul class="list-bullet">
+            <li class="list-inline"><a class="link" href="#"><strong>HOME</strong></a></li >
+            <li class="list-inline"><a class="link" href="#"><strong>ABOUT US</strong></a></li>
+            <li class="list-inline"><a class="link" href="#"><strong>PRICING</strong></a></li>
+            <li class="list-inline"><a class="link" href="#"><strong>CONTACT</strong></a></li >
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <img src="images/IMAGE-1.avif" width="250px" height="200px">
+        </div>
+        <div class="box">
+            <img src="images/IMAGE-2.avif" width="250px" height="200px">
+        </div>
+        <div class="box">
+            <img src="images/IMAGE-3.avif" width="250px" height="200px">
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="col">
+            Copyrights Reserved 2024
+        </div>
+    </footer>
+
+</body>
+</html>
