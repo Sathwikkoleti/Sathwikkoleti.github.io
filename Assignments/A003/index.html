@@ -20,6 +20,7 @@
         .container {
             display: flex;
             height: auto;
+            flex-flow: i;
             flex-basis: 39%;
         }
         .special{
@@ -31,7 +32,8 @@
             margin-top: 200px;
             width: 320px;
             margin-bottom: -45px;
-            margin-left: 30px;
+            margin-left: -30px;
+            align-items: left;
             flex-basis: 40%;
         }
         .logo h2{
@@ -40,7 +42,6 @@
             height: 46px;
            
             font-size: 24px;
-            margin-left: 60px;
             text-align: left;
         }
         .box{
@@ -52,7 +53,7 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             /* z-index: 5; */
             margin-top: 120px;
-            margin-left:30px ;
+            margin-left:80px ;
             
         }
         .box .input-cont{
@@ -143,6 +144,14 @@
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class="special">
+            <div class="logo">
+                <img src="images/facebook.svg" alt="Facebook Logo" width="175px">
+                <h2>Facebook helps you connect and share with the people in your life.</h2>
+            </div>
+        </div>
+    </div>
     <div class="box">
         <div class="input-cont">
             <form>
@@ -165,14 +174,6 @@
                 <a href="#"><strong>Create a Page </strong></a>
                 for a celebrity, brand or business.
             </div>   
-        </div>
-    </div>
-    <div class="container">
-        <div class="special">
-            <div class="logo">
-                <img src="images/facebook.svg" alt="Facebook Logo" width="175px">
-                <h2>Facebook helps you connect and share with the people in your life.</h2>
-            </div>
         </div>
     </div>
 </body>

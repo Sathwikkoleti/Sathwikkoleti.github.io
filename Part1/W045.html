@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="img/icon" href="img.png">
+</head>
+<style>
+    *{
+        margin:0;   
+    }
+    h1{
+        padding: 0;
+    }
+    ul{
+        text-align: right;
+        /* margin:0; */
+        padding: 0;
+        width: 100%;
+        position:absolute;
+        background-color: cyan ;
+    }
+    li{
+        display: inline-block;
+        padding: 5px;
+    }
+    .sub-list{
+        display: none;
+        position:absolute;
+        
+    }
+    .menu:hover .sub-list{
+        display:block
+    }
+    .sub-list a{
+        display: flex;
+        justify-content: center;
+        padding: 2px;
+        /* position:absolute; */
+        width:300px;
+        height: 30px;
+        text-decoration: none;
+        color:black;
+        background-color: beige;
+    }
+    .sub-list a:hover{
+        color:purple;
+    }
+    .cont{
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+<body>
+    <div class="cont">
+    <div>
+        <h1>Comp name</h1>
+    </div>
+    <div>
+    <ul>
+        <li>Home</li>
+        <li class="menu">Course
+            <div class="sub-list">
+                <a href="#">Java Full Stack</a><br>
+                <a href="#">UI/UX</a><br>
+            </div>
+        </li>
+
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+    </div>
+    </div>
+</body>
+</html>
