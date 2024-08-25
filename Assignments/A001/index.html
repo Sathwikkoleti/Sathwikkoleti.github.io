@@ -12,13 +12,14 @@
     --primary-color:#E50914;
 }
 .container{
-    width: 100%;
+    width: 100vw;
     height: 500px;
     text-align: center;
     display:flex;
     
 }
 body{
+    width:100vw;
     font-family: 'Poppins', sans-serif;
     background-color: black;
     font-style: bold;
@@ -74,9 +75,6 @@ body{
     justify-content: center;
     background-size: cover;
     background-position: center;
-    
-
-    /* align-items: center; */
 }
 nav{
     display: flex;
@@ -143,11 +141,12 @@ input::placeholder{
 }
 
 .features{
-    padding: 0 12%;
+    /* padding: 0 12%; */
     
 }
 .row{
     display:flex;
+    padding: 0 12%;
     width:100%;
     align-items: center;
     flex-wrap: wrap;
@@ -167,7 +166,7 @@ input::placeholder{
     display: block;
     margin: auto;
     width: 90%;
-    /* align-items: left; */
+    
     
 }
 /* 
@@ -265,16 +264,19 @@ input[type="radio"]:checked + label+ .content{
     padding: 50px 15% 10px;
     border-top: 6px solid#333;
     color: #777;
+    /* display: flex; */
 }
 .footer h2{
     font-size: 18px;
     font-weight:400;
     margin-bottom: 30px;
+    text-align: center;
 }
 .footer .col{
     flex-basis:25%;
     flex-grow: 1;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 .footer .col a{
     display: block;
@@ -285,11 +287,25 @@ input[type="radio"]:checked + label+ .content{
 }
 .footer .row{
     align-items: flex-start;
+    text-align: left;
 
 }
 
+::-webkit-scrollbar{
+    width:5px;
 
-
+}
+::-webkit-scrollbar-track{
+    background-color:transparent;
+}
+::-webkit-scrollbar-thumb{
+    height: 2px;
+    background-color:grey;
+    border-radius: 20px;
+}
+small{
+    font-size: 8px;
+}
 </style>
 <body>
     <container class="container">
@@ -320,7 +336,9 @@ input[type="radio"]:checked + label+ .content{
         <button class="button-prop">
             Get Started >
         </button>
+        
         <div class="features">
+            <div class="bor"></div>
             <div class="row">
                 <div class="text-col">
                <h2>Enjoy on your TV</h2>
@@ -335,6 +353,9 @@ input[type="radio"]:checked + label+ .content{
                     </div> -->
                 </div>
             </div>
+
+            <div class="bor"></div>
+
             <div class="row">
                 <div class="img-col">
                     <!-- <div class="frame"> -->
@@ -349,6 +370,9 @@ input[type="radio"]:checked + label+ .content{
                 </p>
                 </div>
             </div>
+
+            <div class="bor"></div>
+
             <div class="row">
                 <div class="text-col">
                <h2>Watch everywhere</h2>
@@ -363,7 +387,9 @@ input[type="radio"]:checked + label+ .content{
                     </div> -->
                 </div>
             </div>
+
             <div class="bor"></div>
+
             <div class="row">
                 <div class="img-col">
                     <!-- <div class="frame"> -->
@@ -378,7 +404,9 @@ input[type="radio"]:checked + label+ .content{
                 </p>
                 </div>
             </div>
+            
             <div class="bor"></div>
+            
             <div class="faq">
                 <h2>Frequently Asked Questions</h2>
                 <ul class="accordion">
@@ -434,30 +462,32 @@ input[type="radio"]:checked + label+ .content{
             </div>
             <div class="footer">
                 <h2>Questions? Call 000-800-919-1694</h2>
-                <div class="row"></div>
-                <div class="col">
-                    <a href="#">FAQ</a>
-                    <a href="#">Investor Relations</a>
-                    <a href="#">Privacy</a>
-                    <a href="#">Speed Test</a>
+                <div class="row">
+                    <div class="col">
+                        <a href="#">FAQ</a>
+                        <a href="#">Investor Relations</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Speed Test</a>
+                    </div>
+                    <div class="col">
+                        <a href="#">Help Center</a>     
+                        <a href="#">Jobs</a>
+                        <a href="#">Cookies Preferences</a>
+                        <a href="#">Legal Notices</a>
+                    </div>
+                    <div class="col">
+                        <a href="#">Account</a>     
+                        <a href="#">Ways to Watch</a>
+                        <a href="#">Corporate Infromation</a>
+                        <a href="#">Only on Netflix</a>
+                    </div>
+                    <div class="col">
+                        <a href="#">Media Center</a>     
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Conatact Us</a> 
+                    </div>
                 </div>
-                <div class="col">
-                    <a href="#">Help Center</a>     
-                    <a href="#">Jobs</a>
-                    <a href="#">Cookies Preferences</a>
-                    <a href="#">Legal Notices</a>
-                </div>
-                <div class="col">
-                    <a href="#">Account</a>     
-                    <a href="#">Ways to Watch</a>
-                    <a href="#">Corporate Infromation</a>
-                    <a href="#">Only on Netflix</a>
-                </div>
-                <div class="col">
-                    <a href="#">Media Center</a>     
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Conatact Us</a> 
-                </div>
+                <small>©️ This is a practice landing page all rights are reserved to the company.</small>
             </div>
         </div>
        
